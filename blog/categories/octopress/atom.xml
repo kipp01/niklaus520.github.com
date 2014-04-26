@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: OctoPress | My Octopress Blog]]></title>
+  <title><![CDATA[Category: OctoPress | Depressed Marvin's Blog]]></title>
   <link href="http://niklaus520.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://niklaus520.github.io/"/>
-  <updated>2014-04-26T16:02:33+08:00</updated>
+  <updated>2014-04-26T16:39:22+08:00</updated>
   <id>http://niklaus520.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Marvin]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -23,6 +23,9 @@
 <p><strong>26 Apr 2014 &ndash; Harbin, China</strong></p>
 
 <p>Just a simple test, hope it works!</p>
+
+<!-- more -->
+
 
 <p>第一次在github上用MD，Octopress，希望好用。</p>
 
