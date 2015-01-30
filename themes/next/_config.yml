@@ -1,0 +1,27 @@
+menu:
+  home: /
+  archives: /archives
+  tags: /tags
+
+favicon: /favicon.ico
+
+# Set rss to false to disable feed link.
+# Leave rss as empty to use site's feed link.
+# Set rss to specific value if you have burned your feed already.
+rss:
+
+# Google Analytics
+google_analytics: UA-51305142-1
+
+# Code Highlight theme
+## Available value: normal | night | night eighties | night blue | night bright
+## https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night eighties
+
+# Fancybox
+fancybox: true
+
+# Specify the date when the site was setup
+since: 2015
+
+version: 0.1.2
