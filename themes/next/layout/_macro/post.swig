@@ -3,16 +3,6 @@
   <div class="post post-type-{{ post.type | default('normal') }}">
     <div class="post-header">
 
-      <div class="post-meta">
-          <span class="post-time">
-            {% if is_home() or is_post() %}
-              {{ __('post.posted') }} {{ post.date | date('Y-m-d') }}
-            {% else %}
-              {{ post.date | date('m-d') }}
-            {% endif %}
-          </span>
-      </div>
-
       {# Not show title for quote posts that do not have a title #}
       {% if not (is_home() and post.type === 'quote' and not post.title) %}
         <h1 class="post-title">
@@ -32,6 +22,17 @@
           {% endif %}
         </h1>
       {% endif %}
+
+    <div class="post-meta">
+        <span class="post-time">
+            {% if is_home() or is_post() %}
+                {{ __('post.posted') }} {{ post.date | date('Y-m-d') }}
+            {% else %}
+                {{ post.date | date('m-d') }}
+            {% endif %}
+        </span>
+    </div>
+      
     </div>
 
     {% if not (is_archive() or is_category() or is_tag()) %}
