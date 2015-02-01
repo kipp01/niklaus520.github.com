@@ -10,7 +10,7 @@
   <span class="archive-move-on"></span>
   <span class="archive-page-counter">
     Great! {{ site.posts.length }} posts in total. <br />
-    eople always die alone. <br />
+    People always die alone. <br />
     Keep on posting. 
   </span>
 
