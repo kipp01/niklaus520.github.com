@@ -35,7 +35,7 @@
       
     </div>
 
-    {% if is_home() or is_post() %}
+    {% if not (is_archive() or is_category() or is_tag()) %}
       <div class="post-body">
 
         {# Gallery support #}
