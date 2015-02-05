@@ -92,6 +92,8 @@ NexT comes with few configurations.
 menu:
   home: /
   archives: /archives
+  tags: /tags
+  #about: /about
 
 # Favicon
 favicon: /favicon.ico

@@ -2,6 +2,7 @@ menu:
   home: /
   archives: /archives
   tags: /tags
+  #about: /about
 
 favicon: /favicon.ico
 
@@ -24,4 +25,14 @@ fancybox: true
 # Specify the date when the site was setup
 since: 2015
 
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | public
+creative_commons: 
+
+# Static files
+vendors: /vendors
+css: /css
+images: /images
+ 
 version: 0.1.3
