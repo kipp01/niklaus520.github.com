@@ -8,7 +8,7 @@ subtitle: Kinda Love U
 description: Now you can kill me.
 author: Marvin
 email: niklaus520@aol.com
-language: 
+language: default
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -57,7 +57,7 @@ tag: 2
 ## You can customize the logger format as defined in
 ## http://www.senchalabs.org/connect/logger.html
 port: 4000
-server_ip: 127.0.0.1
+server_ip: localhost
 logger: false
 logger_format: dev
 
@@ -92,10 +92,17 @@ exclude_generator:
 plugins:
 #- hexo-generator-robotstxt
 
+social:
+  github: https://github.com/niklaus520
+  twitter: https://twitter.com/niklaus522
+  weibo: http://weibo.com/u/2751804741
+  douban: http://www.douban.com/people/fuckallstuff/
+  V2ex: https://www.v2ex.com/member/niklaus520
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository:
+  repo:
     gitcafe: git@gitcafe.com:niklaus520/niklaus520.git,gitcafe-pages
     github: git@github.com:niklaus520/niklaus520.github.com.git,master

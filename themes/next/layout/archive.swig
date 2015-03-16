@@ -1,17 +1,21 @@
 {% extends '_layout.swig' %}
 {% import '_macro/post.swig' as render %}
 
-{% block title %} Archive | {{ config.title }} {% endblock %}
+{% block title %} {{ __('title.archive') }} // {{ config.title }} {% endblock %}
 
 {% block page_class %} page-archive {% endblock %}
 
 {% block content %}
 
   <span class="archive-move-on"></span>
+
   <span class="archive-page-counter">
-    Great! {{ site.posts.length }} posts in total. <br />
-    People always die alone. <br />
-    Keep on posting. 
+    {% set cheers = 'Great' %}
+    {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }}
+    <br>
+    "People always die alone"
+    <br>
+    {{ __('keep_on') }}
   </span>
 
   {% for post in page.posts %}
@@ -22,8 +26,8 @@
 
     {% if post.year !== year %}
       {% set year = post.year %}
-      <div class="archive-year">
-        <h2 class="collection-title">{{ year }}</h2>
+      <div class="collection-title">
+        <h2 class="archive-year motion-element" id="archive-year-{{ year }}">{{ year }}</h2>
       </div>
     {% endif %}
     {# endshow #}
@@ -34,17 +38,9 @@
 {% endblock %}
 
 {% block script_extra %}
-  <script type="text/javascript">
-    $(document).ready(function () {
-      var clock = 0;
-      function moveOn() {
-        $('.archive-move-on').animate({
-          opacity: clock ? 1 : 0.1
-        }, 1000);
-        clock = !clock;
-        setTimeout(moveOn, 1000);
-      }
-      moveOn();
-    });
-  </script>
+  {% if theme.use_motion %}
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  {% endif %}
 {% endblock %}
