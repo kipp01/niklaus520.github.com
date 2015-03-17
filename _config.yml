@@ -103,6 +103,6 @@ social:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo:
+  repository:
     gitcafe: git@gitcafe.com:niklaus520/niklaus520.git,gitcafe-pages
     github: git@github.com:niklaus520/niklaus520.github.com.git,master

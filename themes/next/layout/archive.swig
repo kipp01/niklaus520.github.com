@@ -10,10 +10,9 @@
   <span class="archive-move-on"></span>
 
   <span class="archive-page-counter">
-    {% set cheers = 'Great' %}
-    {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }}
+    Great! {{ _p("counter.archive_posts", site.posts.length) }}
     <br>
-    "People always die alone"
+    People always die alone.
     <br>
     {{ __('keep_on') }}
   </span>
