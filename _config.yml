@@ -93,10 +93,10 @@ plugins:
 #- hexo-generator-robotstxt
 
 social:
-  github: https://github.com/niklaus520
-  twitter: https://twitter.com/niklaus522
-  weibo: http://weibo.com/u/2751804741
-  douban: http://www.douban.com/people/fuckallstuff/
+  Github: https://github.com/niklaus520
+  Twitter: https://twitter.com/niklaus520
+  Weibo: http://weibo.com/u/2751804741
+  Douban: http://www.douban.com/people/fuckallstuff/
   V2ex: https://www.v2ex.com/member/niklaus520
 
 # Deployment
