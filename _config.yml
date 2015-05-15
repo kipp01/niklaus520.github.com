@@ -76,7 +76,7 @@ pagination_dir: page
 # Disqus
 disqus_shortname: dpmarvin
 
-sitemap:
+#sitemap:
 #    path: sitemap.xml
 
 feed:
