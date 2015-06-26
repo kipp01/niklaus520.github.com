@@ -1,0 +1,12 @@
+INFO: loading config from /etc/shadowsocks.json
+2015-06-25 22:46:33 INFO     loading libcrypto from libcrypto.so.1.0.0
+2015-06-25 22:46:33 INFO     starting local at 127.0.0.1:1080
+INFO: loading config from /etc/shadowsocks.json
+2015-06-25 22:50:10 INFO     loading libcrypto from libcrypto.so.1.0.0
+2015-06-25 22:50:10 INFO     starting local at 127.0.0.1:1080
+INFO: loading config from /etc/shadowsocks.json
+2015-06-25 23:08:34 INFO     loading libcrypto from libcrypto.so.1.0.0
+2015-06-25 23:08:34 INFO     starting local at 127.0.0.1:1080
+INFO: loading config from /etc/shadowsocks.json
+2015-06-25 23:08:40 INFO     loading libcrypto from libcrypto.so.1.0.0
+2015-06-25 23:08:40 INFO     starting local at 127.0.0.1:1080
