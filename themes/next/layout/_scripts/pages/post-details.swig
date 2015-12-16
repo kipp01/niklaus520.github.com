@@ -106,11 +106,11 @@
       });
 
       // Expand sidebar on post detail page by default, when post has a toc.
-      if ($('.post-toc').html().trim().length > 0 && isDesktop()) {
-        setTimeout(function () {
-          $('.sidebar-toggle').trigger('click');
-        }, 800);
-      }
+      //if ($('.post-toc').html().trim().length > 0 && isDesktop()) {
+      //  setTimeout(function () {
+      //    $('.sidebar-toggle').trigger('click');
+      //  }, 800);
+      //}
     });
   </script>
 {% endif %}
