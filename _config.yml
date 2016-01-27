@@ -79,10 +79,10 @@ disqus_shortname: dpmarvin
 #sitemap:
 #    path: sitemap.xml
 
-#feed:
-#  type: atom
-#  path: atom.xml
-#  limit: 0
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
@@ -90,6 +90,8 @@ disqus_shortname: dpmarvin
 theme: next
 exclude_generator:
 plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
 #- hexo-generator-robotstxt
 
 social:
