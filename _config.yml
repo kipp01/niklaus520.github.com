@@ -82,7 +82,7 @@ disqus_shortname: dpmarvin
 feed:
   type: atom
   path: atom.xml
-  limit: 0
+  limit: 10
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
