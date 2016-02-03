@@ -168,12 +168,14 @@ def ReadAndWriteMood(mood_file_path):
     #GeneratePageContent(1, total_page_number, moods_in_page)
     #if total_page_number > 1:
     for i in range(0, total_page_number):
+        moods_in_page = ''' '''
         for j in range(1 + 9 * i, 11 + 9 * i if (11 + 9 * i) <= (len(moods['life']) + 1 ) else len(moods['life']) + 1):
-            # print str(j)
+            print str(j - 1)
             moods_in_page += '\r\n\r\n'
             moods_in_page += moods['life'][j - 1]['created_at'].encode("utf-8")
             moods_in_page += '\r\n\r\n'
             moods_in_page += moods['life'][j - 1]['content'].encode("utf-8")
+            print moods['life'][j - 1]['content'].encode("utf-8")
             moods_in_page += '\r\n\r\n'
             moods_in_page += '''---'''
         GeneratePageContent(i + 1, total_page_number, moods_in_page)
