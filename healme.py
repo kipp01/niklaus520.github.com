@@ -1,6 +1,7 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 
+import subprocess
 import json
 import time
 import sys
@@ -26,5 +27,8 @@ if __name__ == '__main__':
     if len(sys.argv) == 2:
         WriteDownYourLove(sys.argv[1])
         os.chdir(HEXO_COMMAND_PATH)
-        os.system("./saveme.py")
-        os.system('''hexo clean && hexo d && git add . && git commit -m "add mood" && git push origin source''')
+        #os.system("./saveme.py")
+        #os.system('''hexo clean && hexo d && git add . && git commit -m "add mood" && git push origin source''')
+        with open(os.devnull, 'wb') as devnull:
+            subprocess.check_call(['./saveme.py'], stdout=devnull, stderr=subprocess.STDOUT)
+            subprocess.check_call('''hexo clean && hexo d && git add . && git commit -m "add mood" && git push origin source''', shell=True, stdout=devnull, stderr=subprocess.STDOUT)
