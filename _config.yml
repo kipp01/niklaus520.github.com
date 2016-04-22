@@ -106,5 +106,5 @@ social:
 deploy:
   type: git
   repository:
-    gitcafe: git@gitcafe.com:niklaus520/niklaus520.git,gitcafe-pages
+    gitcafe: git@git.coding.net:dpm4rvin/dpm4rvin.git,coding-pages
     github: git@github.com:niklaus520/niklaus520.github.com.git,master
